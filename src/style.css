@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  background-color: #fff7ed;
+  color: #6e463b;
+}
+
+#content {
+  height: 100%;
+}
+
+.header-img {
+  height: 40px;
+  width: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.heading-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+ul > li {
+  font-size: 1.25rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:hover,
+.heading-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.home-container {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.home-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.home-header-container > h2 {
+  color: #9e6454;
+}
+
+.home-image-container {
+  background-image: url(../assets/chai-home.png);
+  background-size: cover;
+  padding: 9rem;
+  border-radius: 0.25rem;
+}
+
+.menu-btn {
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: #c88948;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+}
