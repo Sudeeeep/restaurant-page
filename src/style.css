@@ -7,10 +7,10 @@
 
 html,
 body {
-  height: 100%;
   font-size: 16px;
   background-color: #fff7ed;
-  color: #6e463b;
+  /* color: #6e463b; */
+  color: #8b5749;
 }
 
 #content {
@@ -18,8 +18,8 @@ body {
 }
 
 .header-img {
-  height: 40px;
-  width: 40px;
+  height: 3rem;
+  width: 3rem;
 }
 
 header {
@@ -86,16 +86,53 @@ li:hover,
   border-radius: 0.25rem;
 }
 
-.menu-btn {
+.home-menu-btn {
   font-size: 1rem;
   padding: 1rem;
   border: none;
-  background-color: #c88948;
+  background-color: #e3a76a;
+  /* background-color: #f2a55c; */
   color: white;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.menu-btn:hover {
+.home-menu-btn:hover {
   transform: scale(1.05);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  background-color: #8b5749;
+}
+
+.git-hub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.git-hub-logo {
+  height: 1rem;
+  width: 1rem;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-nav {
+  font-size: 0.75em;
+  text-decoration: underline;
+  cursor: pointer;
 }

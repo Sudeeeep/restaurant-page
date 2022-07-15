@@ -33,37 +33,76 @@ function headerLoad() {
 
 }
 
+function footerLoad() {
+    const footer = document.createElement('footer');
+    const gitHubContainer = document.createElement('div');
+    const gitHubLogo = document.createElement('img');
+    const gitHubUsername = document.createElement('span');
+    const footerNavContainer = document.createElement('div');
+    const footerHome = document.createElement('span');
+    const footerMenu = document.createElement('span');
+    const footerAbout = document.createElement('span');
+    const footerContact = document.createElement('span');
+
+    gitHubLogo.src = '../assets/github.png'
+    gitHubUsername.innerText = "@Sudeeeep";
+    footerHome.innerText = "HOME";
+    footerMenu.innerText = "MENU";
+    footerAbout.innerText = "ABOUT";
+    footerContact.innerText = "CONTACT";
+
+    gitHubContainer.classList.add('git-hub-container');
+    gitHubLogo.classList.add('git-hub-logo');
+    gitHubUsername.classList.add('git-hub-username');
+    footerNavContainer.classList.add('footer-nav-container');
+    footerHome.classList.add('footer-nav');
+    footerMenu.classList.add('footer-nav');
+    footerAbout.classList.add('footer-nav');
+    footerContact.classList.add('footer-nav');
+
+    contentDiv.appendChild(footer);
+    footer.append(footerNavContainer, gitHubContainer);
+    footerNavContainer.append(footerHome, footerMenu, footerAbout, footerContact);
+    gitHubContainer.append(gitHubLogo, gitHubUsername);
+
+}
+
+
 function homePage() {
     headerLoad();
+
     const homeContainer = document.createElement('div');
     const homeTextContainer = document.createElement('div');
     const homeHeaderContainer = document.createElement('div');
     const homeHeader = document.createElement('h1');
     const homeSubHeader = document.createElement('h2');
-    const menuBtnContainer = document.createElement('div');
-    const menuBtn = document.createElement('button');
+    const homeMenuBtnContainer = document.createElement('div');
+    const homeMenuBtn = document.createElement('button');
     const homeImageContainer = document.createElement('div');
 
     homeContainer.classList.add('home-container');
     homeTextContainer.classList.add('home-text-container');
     homeHeaderContainer.classList.add('home-header-container');
     homeImageContainer.classList.add('home-image-container');
-    menuBtnContainer.classList.add('menu-btn-container')
-    menuBtn.classList.add('menu-btn');
+    homeMenuBtnContainer.classList.add('home-menu-btn-container')
+    homeMenuBtn.classList.add('home-menu-btn');
 
-    homeHeader.innerText = "GET READY TO TASTE THE BEST CHAI IN THE WORLD"
+    homeHeader.innerText = "GET READY TO TASTE THE BEST CHAI IN THE WORLD."
     homeSubHeader.innerText = "AND GRAB A QUICK BITE";
-    menuBtn.innerText = "DISCOVER MENU";
+    homeMenuBtn.innerText = "DISCOVER MENU";
 
     homeContainer.append(homeTextContainer, homeImageContainer);
-    homeTextContainer.append(homeHeaderContainer, menuBtnContainer);
+    homeTextContainer.append(homeHeaderContainer, homeMenuBtnContainer);
     homeHeaderContainer.append(homeHeader, homeSubHeader);
-    menuBtnContainer.append(menuBtn);
+    homeMenuBtnContainer.append(homeMenuBtn);
     contentDiv.append(homeContainer);
+
+    footerLoad();
 }
 
 export {
     headerLoad,
+    footerLoad,
     homePage,
     contentDiv,
 }
