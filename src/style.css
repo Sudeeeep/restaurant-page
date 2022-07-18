@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  background-color: #fff7ed;
+  /* color: #6e463b; */
+  color: #8b5749;
+}
+
+#content {
+  height: 100%;
+}
+
+.header-img {
+  height: 3rem;
+  width: 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.heading-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+ul > li {
+  font-size: 1.25rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:hover,
+.heading-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.home-container {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.home-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.home-header-container > h2 {
+  color: #9e6454;
+}
+
+.home-image-container {
+  background-image: url(../assets/chai-home.png);
+  background-size: cover;
+  padding: 9rem;
+  border-radius: 0.25rem;
+}
+
+.home-menu-btn {
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: #e3a76a;
+  /* background-color: #f2a55c; */
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.home-menu-btn:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  background-color: #8b5749;
+}
+
+.git-hub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.git-hub-logo {
+  height: 1rem;
+  width: 1rem;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-nav {
+  font-size: 0.75em;
+  text-decoration: underline;
+  cursor: pointer;
+}
