@@ -166,3 +166,22 @@ footer {
 .address {
   font-size: 1.5rem;
 }
+
+/* About Page*/
+.about-container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.about-img-container {
+  background-image: url(../assets/chai-about.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 9rem;
+}
+
+.about-text-container {
+  font-size: 1.5rem;
+}
