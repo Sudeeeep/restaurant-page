@@ -136,3 +136,33 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* contact Page*/
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem auto;
+}
+
+.number-container,
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 5rem 10rem;
+  align-items: center;
+}
+
+.call-icon,
+.map-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.first-number,
+.second-number,
+.address {
+  font-size: 1.5rem;
+}
