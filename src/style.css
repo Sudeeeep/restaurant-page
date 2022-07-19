@@ -185,3 +185,51 @@ footer {
 .about-text-container {
   font-size: 1.5rem;
 }
+
+/* Menu Page */
+
+.menu-container {
+  margin: 3rem auto;
+  width: 60%;
+  padding-bottom: 2rem;
+}
+
+.chai-header,
+.snacks-header {
+  padding: 2rem;
+}
+
+.chai-menu-container,
+.snacks-menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.adrak-chai-container,
+.chocolate-chai-container,
+.rose-chai-container,
+.kesar-chai-container,
+.bun-maska-container,
+.fries-container,
+.masala-toast-container,
+.maggie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.adrak-chai-img,
+.chocolate-chai-img,
+.rose-chai-img,
+.kesar-chai-img,
+.bun-maska-img,
+.fries-img,
+.masala-toast-img,
+.maggie-img {
+  height: 15rem;
+  width: 15rem;
+}
