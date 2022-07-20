@@ -2,6 +2,8 @@ import {
     contentDiv,
 } from ".";
 
+import chaiLogo from '../assets/chai-tea.png';
+
 const header = document.createElement('header');
 const headingContainer = document.createElement('div');
 const mainHeading = document.createElement('h1');
@@ -16,7 +18,7 @@ const contact = document.createElement('li');
 
 function headerLoad() {
     //create elements 
-    headerImg.src = '../assets/chai-tea.png';
+    headerImg.src = chaiLogo;
     headerImg.classList.add('header-img');
 
     headingContainer.classList.add('heading-container');

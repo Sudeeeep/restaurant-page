@@ -2,6 +2,14 @@ import {
     contentDiv
 } from ".";
 
+import adrakChai from '../assets/adrak-chai.png';
+import chocolateChai from '../assets/chocolate-chai.png';
+import roseChai from '../assets/rose-chai.png';
+import kesarChai from '../assets/kesar-chai.png';
+import bunMaska from '../assets/bun-maska.png';
+import fries from '../assets/fries.png';
+import masalaToast from '../assets/masala-toast.png';
+import maggie from '../assets/masala-maggi.png';
 
 const menuContainer = document.createElement('div');
 const chaiHeader = document.createElement('h1');
@@ -72,14 +80,14 @@ function menuPage() {
     masalaToastText.innerText = "MASALA TOAST";
     maggieText.innerText = "VEGETABLE MAGGIE";
 
-    adrakChaiImg.src = '../assets/adrak-chai.png';
-    chocolateChaiImg.src = '../assets/chocolate-chai.png';
-    roseChaiImg.src = '../assets/rose-chai.png';
-    kesarChaiImg.src = '../assets/kesar-chai.png';
-    bunMaskaImg.src = '../assets/bun-maska.png';
-    friesImg.src = '../assets/fries.png';
-    masalaToastImg.src = '../assets/masala-toast.png';
-    maggieImg.src = '../assets/masala-maggi.png';
+    adrakChaiImg.src = adrakChai;
+    chocolateChaiImg.src = chocolateChai;
+    roseChaiImg.src = roseChai;
+    kesarChaiImg.src = kesarChai;
+    bunMaskaImg.src = bunMaska;
+    friesImg.src = fries;
+    masalaToastImg.src = masalaToast;
+    maggieImg.src = maggie;
 
     menuContainer.classList.add('menu-container');
     chaiHeader.classList.add('chai-header');

@@ -2,6 +2,8 @@ import {
     contentDiv,
 } from ".";
 
+import gitHub from '../assets/github.png';
+
 const footer = document.createElement('footer');
 const gitHubContainer = document.createElement('div');
 const gitHubLogo = document.createElement('img');
@@ -15,7 +17,7 @@ const footerContact = document.createElement('span');
 function footerLoad() {
 
 
-    gitHubLogo.src = '../assets/github.png'
+    gitHubLogo.src = gitHub;
     gitHubUsername.innerText = "@Sudeeeep";
     footerHome.innerText = "HOME";
     footerMenu.innerText = "MENU";

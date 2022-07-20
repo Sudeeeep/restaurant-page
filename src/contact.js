@@ -8,6 +8,9 @@ import {
     headerLoad
 } from "./header";
 
+import call from '../assets/call_FILL.png';
+import location from '../assets/pin_drop.png';
+
 const contactContainer = document.createElement('div');
 const numberContainer = document.createElement('div');
 const addressContainer = document.createElement('div');
@@ -21,8 +24,8 @@ const mapIcon = document.createElement('img');
 
 function contactPage() {
 
-    callIcon.src = '../assets/call_FILL.png';
-    mapIcon.src = '../assets/pin_drop.png';
+    callIcon.src = call;
+    mapIcon.src = location;
     firstNumber.innerText = "+91 44855221";
     secondNumber.innerText = "+91 44865331";
     address.innerText = "221B, Baker Street"
